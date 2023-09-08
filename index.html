@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Brain Destroyer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>        
+    <header id="head"> <h2 id="Game-name">The Brain Destroyer</h2><h3><i>by Junaid</i></h3></header>
+    <div class="rules">
+        <h3 id="rule1"></h3>
+        <h3 id="rule2"></h3>
+        <h3 id="rule3"></h3>
+    </div>
+    <button  id="conform" onclick="clearRule()" >Conform the rules</button>
+    <div id="board" class="table" hidden="true" >
+        <table id="elements">
+            <tr>         
+                <td class="c1" id="00"></td>
+                <td class="c2" id="01"></td>    
+                <td class="c3" id="02"></td>     
+            </tr>
+            <tr>
+                <td class="c1" id="10"></td>
+                <td class="c2" id="11"></td>
+                <td class="c3" id="12"></td>
+            </tr>
+            <tr>
+                <td class="c1" id="20"></td>
+                <td class="c2" id="21"></td>
+                <td class="c3" id="22"></td>
+            </tr>
+            <tr>
+                <td class="c1" id="30"></td>
+                <td class="c2" id="31"></td>
+                <td class="c3" id="32"></td>
+            </tr>
+            <tr>
+                <td class="c1" id="40"></td>
+                <td class="c2" id="41"></td>
+                <td class="c3" id="42"></td>
+            </tr>
+            <tr>
+                <td class="c1" id="50"></td>
+                <td class="c2" id="51"></td>
+                <td class="c3" id="52"></td>
+            </tr>
+            <tr>
+                <td class="c1" id="60"></td>
+                <td class="c2" id="61"></td>
+                <td class="c3" id="62"></td>
+            </tr> 
+            <tr>
+                <td><button onclick="getColumn(1)" id="column1" class="input">Column 1</button></td>
+                <td><button onclick="getColumn(2)" id="column2" class="input">Column 2</button></td>
+                <td><button onclick="getColumn(3)" id="column3" class="input">Column 3</button></td>
+
+            </tr>
+        </table>
+    </div>
+    <br>
+    <button id="restart" onclick="loadPos()" hidden="true" >Restart</button> 
+    <div id="result">
+        <h1 id="number" style="text-align: center;"></h1>
+        <button id="replay" onclick="replay()" hidden="true">Replay</button>
+    </div> 
+</body>
+<script src="app.js"></script>
+</html>
